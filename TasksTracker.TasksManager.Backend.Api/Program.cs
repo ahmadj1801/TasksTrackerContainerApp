@@ -19,6 +19,7 @@ if (app.Environment.IsDevelopment())
     app.UseHttpsRedirection();
 }
 
+app.MapGet("/", () => "API is running");
 
 app.UseAuthorization();
 
