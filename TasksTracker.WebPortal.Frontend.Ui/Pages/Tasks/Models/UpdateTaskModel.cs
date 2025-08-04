@@ -1,0 +1,22 @@
+using System;
+using System.ComponentModel.DataAnnotations;
+
+namespace TasksTracker.WebPortal.Frontend.Ui.Pages.Tasks.Models
+{
+    public class UpdateTaskModel
+    {
+        public Guid TaskId { get; set; }
+
+        [Display(Name = "Task Name")]
+        [Required]
+        public string TaskName { get; set; } = string.Empty;
+
+        [Display(Name = "Task DueDate")]
+        [Required]
+        public DateTime TaskDueDate { get; set; }
+
+        [Display(Name = "Assigned To")]
+        [Required]
+        public string TaskAssignedTo { get; set; } = string.Empty;
+    }
+}

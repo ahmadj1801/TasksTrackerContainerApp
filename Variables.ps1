@@ -1,0 +1,21 @@
+# Execute with "./Variables.ps1" to restore previously-saved variables.
+Set-Variable -Scope Global -Name ACA_ENVIRONMENT_SUBNET_ID -Value "/subscriptions/abb08690-fa0a-4313-a59e-0a9fb13a964c/resourceGroups/rg-tasks-tracker-3r2vpm/providers/Microsoft.Network/virtualNetworks/vnet-tasks-tracker/subnets/ContainerAppSubnet"
+Set-Variable -Scope Global -Name APPINSIGHTS_NAME -Value "appi-tasks-tracker-3r2vpm"
+Set-Variable -Scope Global -Name APPINSIGHTS_INSTRUMENTATIONKEY -Value "b3abd947-5edf-445b-8d31-7b9eed10dc6e"
+Set-Variable -Scope Global -Name AZURE_CONTAINER_REGISTRY_NAME -Value "crtaskstracker3r2vpm"
+Set-Variable -Scope Global -Name BACKEND_API_EXTERNAL_BASE_URL -Value "https://tasksmanager-backend-api.orangemeadow-c372ec53.westus2.azurecontainerapps.io"
+Set-Variable -Scope Global -Name BACKEND_API_INTERNAL_BASE_URL -Value "https://tasksmanager-backend-api.internal.orangemeadow-c372ec53.westus2.azurecontainerapps.io"
+Set-Variable -Scope Global -Name BACKEND_API_NAME -Value "tasksmanager-backend-api"
+Set-Variable -Scope Global -Name ENVIRONMENT -Value "cae-tasks-tracker"
+Set-Variable -Scope Global -Name FRONTEND_UI_BASE_URL -Value "https://tasksmanager-frontend-webapp.orangemeadow-c372ec53.westus2.azurecontainerapps.io"
+Set-Variable -Scope Global -Name FRONTEND_WEBAPP_NAME -Value "tasksmanager-frontend-webapp"
+Set-Variable -Scope Global -Name LOCATION -Value "westus2"
+Set-Variable -Scope Global -Name RANDOM_STRING -Value "3r2vpm"
+Set-Variable -Scope Global -Name RESOURCE_GROUP -Value "rg-tasks-tracker-3r2vpm"
+Set-Variable -Scope Global -Name TARGET_PORT -Value 8080
+Set-Variable -Scope Global -Name VNET_NAME -Value "vnet-tasks-tracker"
+Set-Variable -Scope Global -Name WORKSPACE_ID -Value "37157cc4-772c-4410-9d87-d0a85d6a127e"
+Set-Variable -Scope Global -Name WORKSPACE_NAME -Value "log-tasks-tracker-3r2vpm"
+Set-Variable -Scope Global -Name WORKSPACE_SECRET -Value "SOJFxlWO4qiN7Q+eWs0zDka2HTqL3R97fwW6AmOPvuqK6GQ2/Ixg+nBNg8tURHWanu0uxYXR6+fE5Zkt/eg4Ig=="
+Set-Variable -Scope Global -Name TODAY -Value (Get-Date -Format 'yyyyMMdd')
+Write-Host "Set 19 variables."
