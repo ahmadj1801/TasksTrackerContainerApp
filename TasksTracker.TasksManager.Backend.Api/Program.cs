@@ -2,8 +2,10 @@ using TasksTracker.TasksManager.Backend.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddDaprClient();
+
 // Add services to the container.
-builder.Services.AddSingleton<ITaskManager, FakeTaskManager>();
+builder.Services.AddSingleton<ITaskManager, TasksStoreManager>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
